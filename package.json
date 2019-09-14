@@ -4,7 +4,8 @@
   "description": "Basic boiler plate for graphql using graphql server",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon src/index.js -e js,graphql --exec babel-node",
+    "start": "npm run dev",
+    "prod":"babel src --out-dir build --copy-files",
     "dev": "nodemon src/index.js -e js,graphql --exec babel-node",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
