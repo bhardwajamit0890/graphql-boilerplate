@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "prod":"babel src --out-dir build --copy-files",
+    "prod": "babel src --out-dir build --copy-files",
     "dev": "nodemon src/index.js -e js,graphql --exec babel-node",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest",
+    "test:watch": "jest --watch"
+
   },
   "author": "",
   "license": "ISC",
@@ -24,6 +26,7 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
     "nodemon": "^1.17.5"
   }
 }
