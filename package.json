@@ -5,14 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run dev",
-    "prod": "babel src --out-dir build --copy-files",
-    "dev": "nodemon src/index.js -e js,graphql --exec babel-node",
+    "build": "babel src config --out-dir build --copy-files --ignore spec.js,test.js",
+    "build:watch": "babel src config --out-dir build --copy-files --watch --ignore spec.js,test.js",
+    "prod": "npm run build",
+    "dev": "npm run build && nodemon build/index.js -e js,graphql",
     "test": "jest",
     "test:watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.19.0",
     "babel-cli": "^6.26.0",
     "babel-preset": "^1.0.15",
     "babel-preset-env": "^1.7.0",
