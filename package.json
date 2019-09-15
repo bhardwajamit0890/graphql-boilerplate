@@ -9,7 +9,6 @@
     "dev": "nodemon src/index.js -e js,graphql --exec babel-node",
     "test": "jest",
     "test:watch": "jest --watch"
-
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +16,8 @@
     "babel-cli": "^6.26.0",
     "babel-preset": "^1.0.15",
     "babel-preset-env": "^1.7.0",
-    "graphql-yoga": "^1.14.10"
+    "graphql-yoga": "^1.14.10",
+    "merge-graphql-schemas": "^1.7.0"
   },
   "devDependencies": {
     "eslint": "^6.3.0",
