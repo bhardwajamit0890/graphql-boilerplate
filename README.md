@@ -1,6 +1,8 @@
 # graphql-boilerplate
 
---- Apollo sercer
+## Features:
+--- Apollo server
+--- Component based approach
 --- Standard linting
 --- component based approach
 --- sample component1 created for demo
